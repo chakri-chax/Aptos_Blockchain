@@ -1,10 +1,10 @@
-module todolist_addr::Signer{
-use aptos_std::signer;
-use aptos_std::debug;
+// module todolist_addr::Signer{
+// use aptos_std::signer;
+// use aptos_std::debug;
 
-#[test(sn = @0x1)]
-public entry fun mainsign(sn:signer){
-    let addr = signer::address_of(&sn);
-    debug::print<address>(&addr)
-}
-}
+// #[test(sn = @0x1)]
+// public entry fun mainsign(sn:signer){
+//     let addr = signer::address_of(&sn);
+//     debug::print<address>(&addr)
+// }
+// }

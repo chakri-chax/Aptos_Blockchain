@@ -5,6 +5,7 @@ authors = []
 
 [addresses]
 todolist_addr = 'd7caab487d91a94043ef0c8d26b39059fa54e895395d05dceec0e81393a1ac7d'
+MyAddr = 'd7caab487d91a94043ef0c8d26b39059fa54e895395d05dceec0e81393a1ac7d'
 [dev-addresses]
 
 [dependencies.AptosFramework]
