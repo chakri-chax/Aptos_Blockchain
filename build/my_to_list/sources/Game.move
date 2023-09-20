@@ -47,8 +47,12 @@ module MyAddr::Game{
 
     }
 
-    #[test(owner=@0x42,to = @0x41)]
-    public entry fun test_game(owner:signer,to:signer) acquires GameStar{
+     public entry fun createStarBy(name:vector<u8>,country:vector<u8>,position:u8){
+              
+        
+    }
+
+   public entry fun test_game_entry(owner:signer,to:signer) acquires GameStar{
         let star = MyAddr::Game::createStar(b"Narmadha",b"Bharath",9);
         
         MyAddr::Game::mint(&owner,star);
@@ -70,11 +74,37 @@ module MyAddr::Game{
         // let addrTo = signer::address_of(to);
         MyAddr::Game::transfer(&owner,&to);
 
+            }
+
+
+    // #[test(owner=@0x42,to = @0x41)]
+    // public entry fun test_game(owner:signer,to:signer) acquires GameStar{
+    //     let star = MyAddr::Game::createStar(b"Narmadha",b"Bharath",9);
+        
+    //     MyAddr::Game::mint(&owner,star);
+    //     let addrOwn = signer::address_of(&owner);
+
+    //     let (name,val) = MyAddr::Game::getItem(addrOwn);
+    //     debug::print(&addrOwn);
+    //     debug::print(&name);
+    //     debug::print(&val);
+
+    //     MyAddr::Game::setItemValue(addrOwn,3);
+    //     let (name1,val1) = MyAddr::Game::getItem(addrOwn);
+
+    //     debug::print(&addrOwn);
+    //     debug::print(&name1);
+    //     debug::print(&val1);
+
+    //     // let addrFrom = signer::address_of(owner);
+    //     // let addrTo = signer::address_of(to);
+    //     MyAddr::Game::transfer(&owner,&to);
+
         
 
 
 
 
-    }
+    // }
 
 }

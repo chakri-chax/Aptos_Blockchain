@@ -11,10 +11,10 @@ compiled_package_info:
     std: "0000000000000000000000000000000000000000000000000000000000000001"
     todolist_addr: d7caab487d91a94043ef0c8d26b39059fa54e895395d05dceec0e81393a1ac7d
     vm_reserved: "0000000000000000000000000000000000000000000000000000000000000000"
-  source_digest: 9960563F51E63821F10D9C1E1B919B3737F181B8F68116A7B271DF0B41A2E9E1
+  source_digest: 0B042DE05A3535376F26562E29517532F32CF7B38DD2992CCDB107FBE0793F03
   build_flags:
-    dev_mode: true
-    test_mode: true
+    dev_mode: false
+    test_mode: false
     generate_docs: false
     generate_abis: false
     install_dir: ~
